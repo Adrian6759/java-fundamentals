@@ -1,5 +1,7 @@
 package inheritance;
 
+import reviews.reviews.Review;
+
 import java.util.ArrayList;
 
 public class Shop {
@@ -10,27 +12,27 @@ public class Shop {
     private ArrayList<Review> reviews;
 
     //constructor
-    public Shop(String name, String description, String priceCategory, ArrayList<Review> reviews) {
+    public Shop(String name, String description, String priceCategory) {
         this.name = name;
         this.description = description;
         this.priceCategory = priceCategory;
         this.stars = 0;
-        this.reviews = new ArrayList<>();
+        this.reviews = new ArrayList<Review>();
     }
 
     // Methods
-    public void addReview(Review review) {
-        int sumOfReviewStars = 0;
-        // 1. Add it to reviews List
-        reviews.add(review);
-        // 2. iterate over and get total sum of values
-        for (Review arrayReview : reviews) {
-            sumOfReviewStars += arrayReview.getStars();
+    public void addReview(Review newReview) {
+        if(!reviews.contains(newReview)) {
+            reviews.add(newReview);
+
+
+            int sumOfReviewStars = 0;
+            for (Review shopReview : reviews) {
+                sumOfReviewStars += shopReview.getStars();
+            }
+
+            this.stars = (float) sumOfReviewStars / (float) reviews.size();
         }
-        // 3. calculate averageNum of stars
-        float averageNumOfStars = (sumOfReviewStars / reviews.size());
-        // 4. call setNumOfStars with new value
-        setStars(averageNumOfStars);
     }
 
 

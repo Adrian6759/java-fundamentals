@@ -4,6 +4,9 @@
 package inheritance;
 
 import org.junit.jupiter.api.Test;
+import reviews.reviews.Library;
+import reviews.reviews.Review;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {

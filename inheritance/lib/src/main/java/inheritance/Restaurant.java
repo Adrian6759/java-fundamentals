@@ -1,5 +1,7 @@
 package inheritance;
 
+import reviews.reviews.Review;
+
 import java.util.ArrayList;
 
 public class Restaurant {
@@ -17,18 +19,18 @@ public class Restaurant {
     }
 
     //Methods
-    public void addReview(Review review) {
-        int sumOfReviewStars = 0;
+    public void addReview(Review newReview) {
+        if(!reviews.contains(newReview)) {
+            reviews.add(newReview);
 
-        reviews.add(review);
 
-        for (Review arrayReview : reviews) {
-            sumOfReviewStars += arrayReview.getStars();
+            int sumOfReviewStars = 0;
+            for (Review restaurantReview : reviews) {
+                sumOfReviewStars += restaurantReview.getStars();
+            }
+
+            this.stars = (float) sumOfReviewStars / (float) reviews.size();
         }
-
-        float averageNumOfStars = (sumOfReviewStars / reviews.size());
-
-        setStars(averageNumOfStars);
     }
 
 

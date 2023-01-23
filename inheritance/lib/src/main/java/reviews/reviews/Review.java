@@ -1,4 +1,4 @@
-package inheritance;
+package reviews.reviews;
 
 public class Review {
     private String reviewBody;
@@ -25,6 +25,6 @@ public class Review {
 
     @Override
     public  String toString() {
-        return "Review: " + reviewBody + "By " + author + "star rating is " + stars;
+        return "Review: " + reviewBody + "Author " + author + "star rating is " + stars;
     }
 }
