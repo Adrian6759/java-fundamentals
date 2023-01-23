@@ -1,19 +1,19 @@
 # java-fundamentals
 
-Author: Adrian Hernandez
+## Author: Adrian Hernandez
 
-Overview
+## Overview
 This is going to display the basics of java for my 401 course. This will hold my lab assignments for the next couple of weeks.
 
-Architecture
+## Architecture
 Java is mostly being used.
 
-Credit and Collaborations
-Day 1: Some starter code was given by our instructor Alex White and help was provided by instructor for some of the code. Used Ben Mill's repo for reference for coin flip function. Had everything I needed to solve the problem, just had some code that needed to be deleted and some that just needed to be moved.
+## Credit and Collaborations
+Day 1: Some starter code was given by our instructor Alex White and help was provided by instructor for some code. Used Ben Mill's repo for reference for coin flip function. Had everything I needed to solve the problem, just had some code that needed to be deleted and some that just needed to be moved.
 
-Day 2: Collaborated with my classmates and had some help from Rey as well for the testing portion. Sharmarke helped with the function portion.
+Day 2: Collaborated with my classmates and had some help from Rey as well for the testing portion. Sharmarke helped with the function portion. Used code review for reference.
 
-Time Estimates: Day 1
+## Day 1
 
 Name of feature: 1. Pluralize.
 
@@ -45,44 +45,25 @@ Finish time: TBD
 
 Actual time needed to complete: Still in progress.
 
-Time Estimates: Day 2
+## Day 2
 
 Name of feature: 1. Rolling Dice
-
-Estimate of time needed to complete: 1 hour
-
-Start time: 1630
-
-Finish time: 1830
 
 Actual time needed to complete: 2 hours
 
 Name of feature: 2. Containing Duplicates
 
-Estimate of time needed to complete: 1 hour
-
-Start time: 1830
-
-Finish time: TBD
-
-Actual time needed to complete: Still in progress
-
 Name of feature: 3. Calculating Averages
-
-Estimate of time needed to complete: 1.5 hours
-
-Start time: TBD
-
-Finish time: TBD
-
-Actual time needed to complete: Still in progress.
 
 Name of feature: 4. Array of Arrays
 
-Estimate of time needed to complete: 1.5 hours
 
-Start time: TBD
+Day 3
 
-Finish time: TBD
+Name of feature: 1. Analyzing Weather Data
 
-Actual time needed to complete: Still in progress.
+
+Name of feature: 2. Tallying Election
+
+Name of feature: 3. Calculating Averages
+

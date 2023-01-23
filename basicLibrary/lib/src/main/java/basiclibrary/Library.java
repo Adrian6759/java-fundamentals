@@ -11,12 +11,12 @@ public class Library {
     public boolean someLibraryMethod() {
         return true;
     }
-// Dice Roll Function
+    // Dice Roll Function
     public static int[] roll(int n) {
         Random rand = new Random();
         int[] diceRoll = new int[n];
         for (int i = 0; i < n; i++) {
-            int randNum = rand.nextInt(5);
+            int randNum = rand.nextInt(6);
             diceRoll[i] = randNum + 1;
         }
         return diceRoll;
@@ -24,12 +24,43 @@ public class Library {
 
     // Duplicates Function
 
-    //    public static void () {
-    //        for (int i = 0; i < array.length; i++) {
-    //            for (int j = 0; j < array[i].length; j++);
-    //            }
-    //        }
-    //        return boolean;
+        public boolean containsDuplicates(int[] array) {
+            for (int i = 0; i < array.length; i++) {
+                for (int j = 0; j < array[i].length; j++){
+                    if (i == j) continue;
+                if array[i] == array[j])
+                return true;
+                }
+            }
+            return false;
+            }
+
+    // Calculating Averages
+    public static int calculateAverage(int[] arrayOfValues){
+        int sum=0;
+        int arrayLength = arrayOfValues.length;
+        for (int i = 0; i < arrayOfValues.length; i++) {
+            sum = sum + arrayOfValues[i];
+        }
+        return sum/arrayLength;
+    }
+
+    //Array of Arrays
+    public int[] lowestAverageArray(int[][] weeklyMonthTemperatures){
+        int[] lowestAverageArray = weeklyMonthTemperatures[0];
+        int lowestAverage = calculateAverage(weeklyMonthTemperatures[0]);
+        for (int i = 0; i < weeklyMonthTemperatures.length ; i++) {
+
+            int currentArrayAverage = calculateAverage(weeklyMonthTemperatures[i]);
+            if(currentArrayAverage < lowestAverage){
+                lowestAverageArray = weeklyMonthTemperatures[i];
+            }
+        }
+        return lowestAverageArray;
+    }
+}
+
+
 
 //LAB 03
     //Analyzing Weather Data Function

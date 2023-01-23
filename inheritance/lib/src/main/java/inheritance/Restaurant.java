@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 public class Restaurant {
     private String name;
-    private String price;
+    private String priceCategory;
     private float stars;
     private ArrayList<Review> reviews;
 
 
-    public Restaurant(String name, String price) {
+    public Restaurant(String name, String priceCategory) {
         this.name = name;
-        this.price = price;
+        this.priceCategory = priceCategory;
         this.stars = 0;
-        this.reviews = new ArrayList<>();
+        this.reviews = new ArrayList<Review>();
     }
 
     //Methods
@@ -44,11 +44,11 @@ public class Restaurant {
     }
 
     public String getPrice() {
-        return price;
+        return priceCategory;
     }
 
     public void setPrice(String price) {
-        this.price = price;
+        this.priceCategory = price;
     }
 
     public float getStars() {
@@ -60,7 +60,7 @@ public class Restaurant {
     }
     @Override
     public String toString() {
-        return "Review: " + name + " with a price rating of " + price + " and star rating is " + stars;
+        return "Review: " + name + " with a price rating of " + priceCategory + " and star rating is " + stars;
     }
 }
 

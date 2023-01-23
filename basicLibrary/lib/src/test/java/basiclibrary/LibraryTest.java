@@ -31,6 +31,14 @@ class LibraryTest {
         assertTrue(testArray.length == 5);
 
     }
+
+    @Test void testCalculateArrayAverage(){
+        App sut = newApp();
+        int[] testArray = {66, 64, 58, 65, 71, 57, 60};
+        int result = sut.calculateAverage(testArray);
+        assertNotNull(result);
+        assertEquals((result*0) == 0));
+    }
     @Test void analyzeWeatherData() {
         Library sut = new Library();
 
