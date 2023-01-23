@@ -3,12 +3,12 @@ package inheritance;
 public class Review {
     private String reviewBody;
     private String author;
-    private int numStars;
+    private int stars;
 
     public Review(String reviewBody, String author, int numStars) {
         this.reviewBody = reviewBody;
         this.author = author;
-        this.numStars = numStars;
+        this.stars = stars;
     }
 
     public String getText() {
@@ -19,12 +19,12 @@ public class Review {
         return author;
     }
 
-    public int getNumOfStars() {
-        return numStars;
+    public int getStars() {
+        return stars;
     }
 
     @Override
     public  String toString() {
-        return "Review: " + reviewBody + "By " + author + "star rating is " + numStars;
+        return "Review: " + reviewBody + "By " + author + "star rating is " + stars;
     }
 }
