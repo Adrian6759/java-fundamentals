@@ -15,7 +15,9 @@ Day 2: Collaborated with my classmates and had some help from Rey as well for th
 
 Day 3: Used lab review for reference for resubmit.
 
-## Day 1
+Lab 06: Used lab review for reference for resubmit.
+
+## Lab 1
 
 Name of feature: 1. Pluralize.
 
@@ -47,11 +49,9 @@ Finish time: TBD
 
 Actual time needed to complete: Still in progress.
 
-## Day 2
+## Lab 2
 
 Name of feature: 1. Rolling Dice
-
-Actual time needed to complete: 2 hours
 
 Name of feature: 2. Containing Duplicates
 
@@ -60,11 +60,23 @@ Name of feature: 3. Calculating Averages
 Name of feature: 4. Array of Arrays
 
 
-Day 3
+## Lab 3
 
 Name of feature: 1. Analyzing Weather Data
 
 Name of feature: 2. Tallying Election
 
 Name of feature: 3. Javascript Linter 
+
+Lab 06
+Feature Task 1: Create a class to represent a Restaurant. Each Restaurant should have a name, a number of stars between 0 and 5, and a price category.
+Implement a Restaurant constructor.
+
+Feature Task 2: Create a class to represent a Review. Each Review should have a body, an author, and a number of stars.
+
+Feature Task 3: A Review should be about a single Restaurant. Choose an implementation for this, and implement it. Some considerations:
+
+Feature Task 4: Add an instance method addReview to your Restaurant class. This method should take in a Review instance, and associate that review with this Restaurant. 
+
+Feature Task 5: When you associate a review with a restaurant, that restaurant’s star rating should change. Ensure that your addReview method updates the Restaurant star rating appropriately, and add tests. 
 

@@ -11,4 +11,22 @@ class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
+    @Test void testingAddReviewOnRestaurant() {
+        Review testReview = new Review("Best meal ever, service wasn't easy breezy.", "Dale Easybreeze", 4);
+        Restaurant testRestaurant = new Restaurant("Seatown Subs", "$$");
+
+        testRestaurant.addReview(testReview);
+
+        assertTrue(testRestaurant.getReviews().contains(testReview));
+        assertFalse(testRestaurant.getReviews().isEmpty());
+        assertEquals(testReview.getStars(), testRestaurant.getStars());
+    }
+
+    @Test void testingReviewConstructor(){
+        Review testReview = new Review("Review Body", "Author", 4);
+
+        assertEquals("Body", testReview.getText());
+        assertEquals("Author", testReview.getAuthor());
+        assertEquals(4, testReview.getStars());
+    }
 }
