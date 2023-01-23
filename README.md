@@ -13,6 +13,8 @@ Day 1: Some starter code was given by our instructor Alex White and help was pro
 
 Day 2: Collaborated with my classmates and had some help from Rey as well for the testing portion. Sharmarke helped with the function portion. Used code review for reference.
 
+Day 3: Used lab review for reference for resubmit.
+
 ## Day 1
 
 Name of feature: 1. Pluralize.
@@ -62,8 +64,7 @@ Day 3
 
 Name of feature: 1. Analyzing Weather Data
 
-
 Name of feature: 2. Tallying Election
 
-Name of feature: 3. Calculating Averages
+Name of feature: 3. Javascript Linter 
 
